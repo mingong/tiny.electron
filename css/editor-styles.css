@@ -1,0 +1,59 @@
+/* Basic editor configuration */
+html, body, #textEditor { height: 100%; margin: 0px; }
+.mce-edit-area { display: flex !important; flex-flow: column; }
+.mce-edit-area iframe { flex: 1 1 auto; }
+.mce-tinymce { height: 100%; }
+.mce-tinymce.mce-container { height: 100%; border: 0; }
+.mce-panel { border: 0; }
+.mce-container-body.mce-stack-layout { display: flex; flex-flow: column; height: 100%; }
+.mce-stack-layout-item { flex: 0 0 auto; }
+.mce-edit-area { flex:1 1 auto; }
+.tox .tox-textarea {
+  font-size: 18px;
+  font-family: "Noto Sans Mono CJK TC", "Noto Sans Mono CJK TC", monospace;
+  white-space: pre;
+}
+
+/* Style the title bar */
+.window-title {
+  padding-top: 8px !important;
+  font-size: 18px !important;
+  font-family: "Noto Sans Mono CJK TC", "Noto Sans Mono CJK TC", "Noto Sans Mono CJK TC", "Noto Sans Mono CJK TC", "Noto Sans Mono CJK TC", "Noto Sans Mono CJK TC", NSimSun, SimSun, sans-serif !important;
+  color: #808080 !important;
+}
+
+/* Whole window area border */
+.tox-tinymce {
+  border-top-color: #FFFFFF !important;
+  border: 0 !important;
+}
+
+/* Remove toolbar top border */
+.tox-toolbar__primary {
+  background-image:none !important;
+}
+
+/* Change toolbar icon colors */
+.tox-tbtn svg {
+  fill: #5f6368 !important;
+}
+
+/* Make formats toolbar menu button narrow */
+button[title="Formats"] {
+  width: 50px !important;
+}
+
+/* Customize scrollbar appearance */
+/*** Main styling ***/
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #aaabab;
+}
+::-webkit-scrollbar-track:hover {
+  background: #f3f3f3;
+}

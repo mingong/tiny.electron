@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tiny Electron</title>
+    <!--
+    <meta charset="utf-8">
+    -->
+    <meta charset="UTF-8">
+    
+    <!-- Manifest and icons -->
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <meta name="theme-color" content="#FFFFFF">
+    
+    <!---->
+    
+  </head>
+  <body>
+    <div id="textEditor" class="tinymce-full"></div>
+    
+    <!--
+    <a id="aDownloadFile" style="display: none;" download></a>
+    <input type="file" id="filePicker" style="display: none;">
+    
+    -->
+    <script src="libs/tinymce/tinymce.min.js" referrerpolicy="origin"></script> <!-- TinyMCE -->
+    
+    <link href="css/editor-styles.css" type="text/css" rel="stylesheet">
+    <script src="markdown-gfm.js"></script> <!-- micromark, kramorcim -->
+    
+    <script src="sbil/prism.js" data-manual></script> <!-- Prism -->
+    <!--
+    <link rel="stylesheet" type="text/css" href="sbil/prism.css">
+    -->
+    <!-- Prism CSS -->
+    <script src="frontMatter.js" inline></script>
+    <script src='index.js'></script>
+  </body>
+</html>
